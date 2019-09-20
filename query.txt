@@ -1,0 +1,24 @@
+режисер с фильмами
+query($id:ID){
+	director(id:$id){
+    id
+    name
+    movies{
+      name
+      genre
+    }
+  }
+}
+
+все фильмы с режисерами
+
+query{
+	movies{
+    name
+    genre
+    director{
+      name
+    }
+  }
+}
+
