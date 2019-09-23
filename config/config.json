@@ -2,5 +2,12 @@
   "app": {
     "port":3020
   },
-  "lesson": "https://www.youtube.com/watch?v=Ks95WahxQd8&list=PLNkWIWHIRwMF2sVLwzRef0Cu5kzAOeRcu&index=7"
+  "db": {
+    "user": "superUser",
+    "pwd": "Serg1978",
+    "host": "localhost",
+    "port": "27017",
+    "name": "films"
+  },
+  "lesson": "https://www.youtube.com/watch?v=4uz9Y4tLpPI"
 }

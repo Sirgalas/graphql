@@ -22,3 +22,56 @@ query{
   }
 }
 
+записать режисера
+mutation($name:String,$age:Int){
+  addDirector(name:$name,age:$age){
+    name
+    age
+  }
+}
+
+
+записать фильмы
+
+mutation($name:String,$genre:String,$directorId:ID){
+  addMovie(name:$name,genre:$genre,directorId:$directorId){
+    name
+    genre
+  }
+}
+
+
+удалить режисера
+
+mutation($id:ID){
+  deleteDirector(id:$id){
+    name
+  }
+}
+удалить фильм
+
+mutation ($id: ID) {
+  deleteMovie(id: $id) {
+    name
+  }
+}
+
+редактировать режисера
+
+mutation ($id: ID,$name:String,$age:Int) {
+  updateDirector(id: $id,name:$name,age:$age) {
+    name
+    age
+  }
+}
+
+редактировать фильм
+mutation ($id: ID,$name:String!,$genre:String!,$directorId:ID) {
+  updateMovie(id: $id,name:$name,genre:$genre,directorId:$directorId) {
+    name
+    genre
+    director{
+      name
+    }
+  }
+}
